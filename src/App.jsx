@@ -75,10 +75,15 @@ function App() {
 
           <div className="inicio_imagen">
             <div className="circulo_pesa">
-              <img src="/Uri.jpeg" alt="Imagen de perfil" className="foto_perfil"/>
+              <img
+                src={`${import.meta.env.BASE_URL}Uri.jpeg`}
+                alt="Imagen de perfil"
+                className="foto_perfil"
+              />
             </div>
             <p>GTA VI • ITS • UACAM</p>
           </div>
+
         </section>
 
         <section id="habilidades" className="seccion seccion_alterna">
