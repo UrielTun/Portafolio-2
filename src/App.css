@@ -1,0 +1,263 @@
+.encabezado {
+    background-color: #242424;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #80b85a;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    font-size: 14px;
+    color: #eeeeee;
+}
+
+.menu a:hover {
+    color: #a4ce87;
+}
+
+.inicio {
+    background-color: #303030;
+    color: white;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 450px;
+}
+
+.inicio_contenido {
+    width: 55%;
+}
+
+.etiqueta {
+    color: #a4ce87;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inicio h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.inicio h1 span {
+    color: #a4ce87;
+}
+
+.inicio_contenido p {
+    color: #dddddd;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.boton_principal {
+    display: inline-block;
+    background-color: #80b85a;
+    color: #172015;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton_principal:hover {
+    background-color: #a4ce87;
+}
+
+.inicio_imagen {
+    width: 40%;
+    text-align: center;
+}
+
+.circulo_pesa {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 4px solid #80b85a;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+}
+
+.simbolo_codigo {
+    font-size: 75px;
+    font-weight: bold;
+    color: #80b85a;
+}
+
+.inicio_imagen p {
+    margin-top: 20px;
+    color: #a4ce87;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.seccion {
+    padding: 65px 8%;
+}
+
+.seccion_alterna {
+    background-color: #e2e2e2;
+}
+
+.titulo_seccion {
+    margin-bottom: 30px;
+}
+
+.titulo_seccion span {
+    font-size: 13px;
+    color: #507d36;
+    font-weight: bold;
+}
+
+.titulo_seccion h2 {
+    font-size: 30px;
+    margin: 8px 0;
+    color: #242424;
+}
+
+.titulo_seccion p {
+    color: #555555;
+    max-width: 700px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 22px;
+}
+
+.tarjeta h3 {
+    color: #426b2e;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #444444;
+    font-size: 15px;
+}
+
+.tarjeta .boton_principal {
+    margin-top: 18px;
+    font-size: 14px;
+    padding: 9px 15px;
+}
+
+.pie_pagina {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.pie_pagina h3 {
+    color: #80b85a;
+    margin-bottom: 10px;
+}
+
+.pie_pagina p {
+    font-size: 14px;
+    color: #dddddd;
+    margin: 5px 0;
+}
+
+@media (max-width: 750px) {
+    .encabezado {
+        flex-direction: column;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .inicio_contenido,
+    .inicio_imagen {
+        width: 100%;
+    }
+
+    .inicio h1 {
+        font-size: 32px;
+    }
+
+    .circulo_pesa {
+        width: 220px;
+        height: 220px;
+    }
+
+    .seccion {
+        padding: 50px 6%;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+
+.foto_perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.botones_proyecto {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.botones_proyecto .boton_principal {
+    margin-top: 0;
+}
+
+.boton_secundario {
+    background-color: #303030;
+    color: white;
+}
+
+.boton_secundario:hover {
+    background-color: #505050;
+}
